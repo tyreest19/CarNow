@@ -51,7 +51,7 @@ class CarKey(db.Model):
                "}".format(KeyID=self.KeyID, CarID=self.CarID)
 
 class SalesPerson(db.Model):
-    """This class represents the Key table"""
+    """This class represents the SalesPerson table"""
     __tablename__ = "SalesPerson"
     SalesPersonID = db.Column(db.Integer, primary_key=True)
     FName = db.Column(db.VARCHAR(30))
