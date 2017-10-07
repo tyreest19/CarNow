@@ -20,7 +20,7 @@ def from_sql(row):
 class Car(db.Model):
     """This class represents the Car table."""
     __tablename__ = "Car"
-    carID = db.Column(db.Integer, primary_key=True)
+    CarID = db.Column(db.Integer, primary_key=True)
     Year = db.Column(db.VARCHAR(4))
     Model = db.Column(db.VARCHAR(50))
     Miles = db.Column(db.Integer)
@@ -114,7 +114,6 @@ def update(table, id, data):
 
 if __name__ == '__main__':
     test = CarKey.query.all()
-    print(read(CarKey, 1))
 
 
 
