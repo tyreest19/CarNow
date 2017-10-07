@@ -110,12 +110,3 @@ def update(table, id, data):
         setattr(row, k, v)
     db.session.commit()
     return from_sql(row)
-
-
-if __name__ == '__main__':
-    test = CarKey.query.all()
-
-
-
-
-
