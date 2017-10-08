@@ -121,16 +121,4 @@ def update(table, id, data):
     db.session.commit()
     return from_sql(row)
 
-colors = ['Red', 'Yellow', 'Blue', 'White', 'Black', 'Grey']
-inventory = pandas.read_excel('/Users/tyreestevenson/Desktop/CarNow/Model/Inventory_Data_Sample_for_Hackathon.xlsx')
-#print(inventory.head())
-inventory = inventory[inventory['DEALER_NUMBER'] == 1]
-counter = 1
-for i in inventory.to_dict(orient='records'):
-    i['CAR_ID'] = counter
-    i['MODEL'] = i.pop('TOMS_SERIES_NAME')
-    i.pop('#BUSINESS_MONTH')
-    i['MILEAGE'] = 0
-    i['COLOR'] = colors[random.randint(0, 6) - 1]
-    counter += 1
-    create(Car, i)
+
