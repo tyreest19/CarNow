@@ -9,6 +9,9 @@ def home():
     # return "Welcome to CarNow"
     return render_template("index.html")
 
+@app.route("/map.html")
+def parkingLot():
+    return render_template("map.html")
 
 @app.route("/search")
 def searchCar():
@@ -24,4 +27,7 @@ def presenetCar():
     """This page will load all the default care info and be basic layout for cars."""
 
 if __name__ == '__main__':
+    # print(url_for('static', filename='static/css/map.css'))
+    # with app.test_request_context():
+    #     print(url_for('static', filename='static/css/map.css'))
     app.run()
