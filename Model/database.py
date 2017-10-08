@@ -32,19 +32,19 @@ class Car(db.Model):
     COLOR = db.Column(db.VARCHAR(20))
 
     def __repr__(self):
-        return "{ " \
-               "CAR_ID: {CAR_ID}, " \
-               "YEAR: {YEAR}"\
-               "MILEAGE: {MILEAGE}"\
-               "COLOR: {COLOR}"\
-               "MODEL_NUMBER: {MODEL_NUMBER} " \
-               "TOMS_SERIES_NAME: {TOMS_SERIES_NAME}"\
-               "DESCRIPTION: {DESCRIPTION}"\
+        #return str(self.CAR_ID)
+        return "["\
+               "CAR_ID: {CAR_ID},"\
+               "MODEL_YEAR: {MODEL_YEAR},"\
+               "MILEAGE: {MILEAGE},"\
+               "COLOR: {COLOR},"\
+               "MODEL: {MODEL},"\
+               "MODEL_NUMBER: {MODEL_NUMBER},"\
+               "DESCRIPTION: {DESCRIPTION},"\
                "STOCK_QTY: {STOCK_QTY}"\
-               "}".format(CAR_ID=self.CAR_ID, DESCRIPTION=self.DESCRIPTION, YEAR=self.YEAR, MODEL=self.MODEL,
-                          MILEAGE=self.MILEAGE, COLOR=self.COLOR, MODEL_NUMBER=self.MODEL_NUMBER,
-                          DRIVETRAIN_NAME=self.DRIVETRAIN_NAME, DEALER_NUMBER=self.DEALER_NUMBER,
-                          STOCK_QTY=self.STOCK_QTY)
+               "]".format(CAR_ID=self.CAR_ID, DESCRIPTION=self.DESCRIPTION, MODEL_YEAR=self.MODEL_YEAR, MODEL=self.MODEL,
+                          MILEAGE=str(self.MILEAGE), COLOR=self.COLOR, MODEL_NUMBER=self.MODEL_NUMBER,
+                          DEALER_NUMBER=self.DEALER_NUMBER, STOCK_QTY=self.STOCK_QTY)
 
 
 class CarKey(db.Model):
@@ -88,6 +88,8 @@ def read(table, id):
     return from_sql(result)
 # [END read]
 
+def search(table, **kwargs):
+    return table.query.filter_by(**kwargs).all()
 
 # [START create]
 def create(table, data):
@@ -120,5 +122,3 @@ def update(table, id, data):
         setattr(row, k, v)
     db.session.commit()
     return from_sql(row)
-
-
