@@ -2,94 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00caabf8-f6ae-4ab8-b9f0-1b428e6c16ec" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/base/_page.scss" afterPath="$PROJECT_DIR$/View/static/css/base/_page.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/base/_typography.scss" afterPath="$PROJECT_DIR$/View/static/css/base/_typography.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/components/_button.scss" afterPath="$PROJECT_DIR$/View/static/css/components/_button.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/components/_form.scss" afterPath="$PROJECT_DIR$/View/static/css/components/_form.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/components/_icon.scss" afterPath="$PROJECT_DIR$/View/static/css/components/_icon.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/components/_list.scss" afterPath="$PROJECT_DIR$/View/static/css/components/_list.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/components/_panel.scss" afterPath="$PROJECT_DIR$/View/static/css/components/_panel.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/components/_poptrox-popup.scss" afterPath="$PROJECT_DIR$/View/static/css/components/_poptrox-popup.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/components/_table.scss" afterPath="$PROJECT_DIR$/View/static/css/components/_table.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/View/static/css/font-awesome.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/ie8.css" afterPath="$PROJECT_DIR$/View/static/css/ie8.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/ie8.scss" afterPath="$PROJECT_DIR$/View/static/css/ie8.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/ie9.css" afterPath="$PROJECT_DIR$/View/static/css/ie9.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/ie9.scss" afterPath="$PROJECT_DIR$/View/static/css/ie9.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/images/arrow.svg" afterPath="$PROJECT_DIR$/View/static/css/images/arrow.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/images/close.svg" afterPath="$PROJECT_DIR$/View/static/css/images/close.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/images/spinner.svg" afterPath="$PROJECT_DIR$/View/static/css/images/spinner.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/layout/_footer.scss" afterPath="$PROJECT_DIR$/View/static/css/layout/_footer.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/layout/_header.scss" afterPath="$PROJECT_DIR$/View/static/css/layout/_header.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/layout/_main.scss" afterPath="$PROJECT_DIR$/View/static/css/layout/_main.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/layout/_wrapper.scss" afterPath="$PROJECT_DIR$/View/static/css/layout/_wrapper.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/libs/_functions.scss" afterPath="$PROJECT_DIR$/View/static/css/libs/_functions.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/libs/_mixins.scss" afterPath="$PROJECT_DIR$/View/static/css/libs/_mixins.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/libs/_skel.scss" afterPath="$PROJECT_DIR$/View/static/css/libs/_skel.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/libs/_vars.scss" afterPath="$PROJECT_DIR$/View/static/css/libs/_vars.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/main.css" afterPath="$PROJECT_DIR$/View/static/css/main.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/main.scss" afterPath="$PROJECT_DIR$/View/static/css/main.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/View/static/fonts/FontAwesome.otf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/View/static/fonts/fontawesome-webfont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/View/static/fonts/fontawesome-webfont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/View/static/fonts/fontawesome-webfont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/View/static/fonts/fontawesome-webfont.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/View/static/fonts/fontawesome-webfont.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/86-front.jpg" afterPath="$PROJECT_DIR$/View/static/images/86-front.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/Parking_Lot.png" afterPath="$PROJECT_DIR$/View/static/images/Parking_Lot.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/avalon-front.jpg" afterPath="$PROJECT_DIR$/View/static/images/avalon-front.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/camry-front.jpg" afterPath="$PROJECT_DIR$/View/static/images/camry-front.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/car2d/car1.png" afterPath="$PROJECT_DIR$/View/static/images/car2d/car1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/car2d/car10.png" afterPath="$PROJECT_DIR$/View/static/images/car2d/car10.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/car2d/car2.png" afterPath="$PROJECT_DIR$/View/static/images/car2d/car2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/car2d/car3.png" afterPath="$PROJECT_DIR$/View/static/images/car2d/car3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/car2d/car4.png" afterPath="$PROJECT_DIR$/View/static/images/car2d/car4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/car2d/car5.png" afterPath="$PROJECT_DIR$/View/static/images/car2d/car5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/car2d/car6.png" afterPath="$PROJECT_DIR$/View/static/images/car2d/car6.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/car2d/car7.png" afterPath="$PROJECT_DIR$/View/static/images/car2d/car7.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/car2d/car8.png" afterPath="$PROJECT_DIR$/View/static/images/car2d/car8.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/car2d/car9.png" afterPath="$PROJECT_DIR$/View/static/images/car2d/car9.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/corolla-front.jpg" afterPath="$PROJECT_DIR$/View/static/images/corolla-front.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/corollaim-front.jpg" afterPath="$PROJECT_DIR$/View/static/images/corollaim-front.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/fulls/01.jpg" afterPath="$PROJECT_DIR$/View/static/images/fulls/01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/fulls/02.jpg" afterPath="$PROJECT_DIR$/View/static/images/fulls/02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/fulls/03.jpg" afterPath="$PROJECT_DIR$/View/static/images/fulls/03.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/fulls/04.jpg" afterPath="$PROJECT_DIR$/View/static/images/fulls/04.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/fulls/05.jpg" afterPath="$PROJECT_DIR$/View/static/images/fulls/05.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/fulls/06.jpg" afterPath="$PROJECT_DIR$/View/static/images/fulls/06.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/fulls/07.jpg" afterPath="$PROJECT_DIR$/View/static/images/fulls/07.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/fulls/08.jpg" afterPath="$PROJECT_DIR$/View/static/images/fulls/08.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/fulls/09.jpg" afterPath="$PROJECT_DIR$/View/static/images/fulls/09.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/fulls/10.jpg" afterPath="$PROJECT_DIR$/View/static/images/fulls/10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/fulls/11.jpg" afterPath="$PROJECT_DIR$/View/static/images/fulls/11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/fulls/12.jpg" afterPath="$PROJECT_DIR$/View/static/images/fulls/12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/parking_lot.JPEG" afterPath="$PROJECT_DIR$/View/static/images/parking_lot.JPEG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/sienna-front.jpg" afterPath="$PROJECT_DIR$/View/static/images/sienna-front.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/thumbs/01.jpg" afterPath="$PROJECT_DIR$/View/static/images/thumbs/01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/thumbs/02.jpg" afterPath="$PROJECT_DIR$/View/static/images/thumbs/02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/thumbs/03.jpg" afterPath="$PROJECT_DIR$/View/static/images/thumbs/03.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/thumbs/04.jpg" afterPath="$PROJECT_DIR$/View/static/images/thumbs/04.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/thumbs/05.jpg" afterPath="$PROJECT_DIR$/View/static/images/thumbs/05.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/thumbs/06.jpg" afterPath="$PROJECT_DIR$/View/static/images/thumbs/06.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/thumbs/07.jpg" afterPath="$PROJECT_DIR$/View/static/images/thumbs/07.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/thumbs/08.jpg" afterPath="$PROJECT_DIR$/View/static/images/thumbs/08.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/thumbs/09.jpg" afterPath="$PROJECT_DIR$/View/static/images/thumbs/09.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/thumbs/10.jpg" afterPath="$PROJECT_DIR$/View/static/images/thumbs/10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/thumbs/11.jpg" afterPath="$PROJECT_DIR$/View/static/images/thumbs/11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/thumbs/12.jpg" afterPath="$PROJECT_DIR$/View/static/images/thumbs/12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/yaris-front.jpg" afterPath="$PROJECT_DIR$/View/static/images/yaris-front.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/yarisia-front.jpg" afterPath="$PROJECT_DIR$/View/static/images/yarisia-front.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/ie/html5shiv.js" afterPath="$PROJECT_DIR$/View/static/js/ie/html5shiv.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/ie/respond.min.js" afterPath="$PROJECT_DIR$/View/static/js/ie/respond.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/jquery.min.js" afterPath="$PROJECT_DIR$/View/static/js/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/jquery.poptrox.min.js" afterPath="$PROJECT_DIR$/View/static/js/jquery.poptrox.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/main.js" afterPath="$PROJECT_DIR$/View/static/js/main.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/skel.min.js" afterPath="$PROJECT_DIR$/View/static/js/skel.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/util.js" afterPath="$PROJECT_DIR$/View/static/js/util.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/LICENSE.txt" afterPath="$PROJECT_DIR$/View/templates/LICENSE.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/README.txt" afterPath="$PROJECT_DIR$/View/templates/README.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/View/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/database.py" afterPath="$PROJECT_DIR$/Model/database.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,17 +14,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CarNow$main.coverage" NAME="main Coverage Results" MODIFIED="1507422067359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CarNow$database.coverage" NAME="database Coverage Results" MODIFIED="1507419818323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model" />
+    <SUITE FILE_PATH="coverage/CarNow$main.coverage" NAME="main Coverage Results" MODIFIED="1507422155690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CarNow$database.coverage" NAME="database Coverage Results" MODIFIED="1507429561503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="225">
+              <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,19 +34,19 @@
       <file leaf-file-name="database.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="111" column="24" lean-forward="false" selection-start-line="111" selection-start-column="24" selection-end-line="111" selection-end-column="24" />
+            <state relative-caret-position="279">
+              <caret line="133" column="42" lean-forward="false" selection-start-line="133" selection-start-column="42" selection-end-line="133" selection-end-column="42" />
               <folding>
-                <element signature="e#1#24#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
+            <state relative-caret-position="458">
               <caret line="188" column="30" lean-forward="false" selection-start-line="188" selection-start-column="30" selection-end-line="188" selection-end-column="30" />
               <folding />
             </state>
@@ -181,9 +97,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Controller/dummyfile.py" />
+        <option value="$PROJECT_DIR$/View/templates/index.html" />
         <option value="$PROJECT_DIR$/Model/database.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/View/templates/index.html" />
       </list>
     </option>
   </component>
@@ -225,20 +141,7 @@
             <path>
               <item name="CarNow" type="b2602c69:ProjectViewProjectNode" />
               <item name="CarNow" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarNow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarNow" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarNow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarNow" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -266,7 +169,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.database">
     <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -309,8 +212,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.main" />
-        <item index="1" class="java.lang.String" itemvalue="Python.database" />
+        <item index="0" class="java.lang.String" itemvalue="Python.database" />
+        <item index="1" class="java.lang.String" itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -344,15 +247,15 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27372766" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27372766" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39889959" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -392,29 +295,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/View/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="188" column="30" lean-forward="false" selection-start-line="188" selection-start-column="30" selection-end-line="188" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Model/database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="111" column="24" lean-forward="false" selection-start-line="111" selection-start-column="24" selection-end-line="111" selection-end-column="24" />
+        <state relative-caret-position="279">
+          <caret line="133" column="42" lean-forward="false" selection-start-line="133" selection-start-column="42" selection-end-line="133" selection-end-column="42" />
           <folding>
-            <element signature="e#1#24#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="188" column="30" lean-forward="false" selection-start-line="188" selection-start-column="30" selection-end-line="188" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="225">
+          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

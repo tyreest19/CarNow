@@ -1,7 +1,7 @@
-
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-
+import pandas
+import random
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://sql3198257:fTL6wulZHf@sql3.freemysqlhosting.net/sql3198257'
 db = SQLAlchemy(app)
@@ -20,21 +20,31 @@ def from_sql(row):
 class Car(db.Model):
     """This class represents the Car table."""
     __tablename__ = "Car"
-    CarID = db.Column(db.Integer, primary_key=True)
-    Year = db.Column(db.VARCHAR(4))
-    Model = db.Column(db.VARCHAR(50))
-    Miles = db.Column(db.Integer)
-    Color = db.Column(db.VARCHAR(30))
+    CAR_ID = db.Column(db.Integer, primary_key=True)
+    DEALER_NUMBER = db.Column(db.Integer)
+    MODEL_YEAR = db.Column(db.VARCHAR(4))
+    MODEL_NUMBER = db.Column(db.VARCHAR(50))
+    MODEL = db.Column(db.VARCHAR(50))
+    DESCRIPTION = db.Column(db.VARCHAR(50))
+    DRIVETRAIN_NAME = db.Column(db.VARCHAR(10))
+    STOCK_QTY = db.Column(db.Integer)
+    MILEAGE = db.Column(db.Integer)
+    COLOR = db.Column(db.VARCHAR(20))
 
     def __repr__(self):
         return "{ " \
-               "carId: '{carID}', " \
-               "Year: '{Year}'"\
-               "Miles: '{Miles}'"\
-               "Color: '{Color}'"\
-               "Model: {Model} " \
-               "}".format(carID=self.carID, Brand=self.Brand, Year=self.Year, Model=self.Model,
-                          Miles=self.Miles, Color=self.Color)
+               "CAR_ID: {CAR_ID}, " \
+               "YEAR: {YEAR}"\
+               "MILEAGE: {MILEAGE}"\
+               "COLOR: {COLOR}"\
+               "MODEL_NUMBER: {MODEL_NUMBER} " \
+               "TOMS_SERIES_NAME: {TOMS_SERIES_NAME}"\
+               "DESCRIPTION: {DESCRIPTION}"\
+               "STOCK_QTY: {STOCK_QTY}"\
+               "}".format(CAR_ID=self.CAR_ID, DESCRIPTION=self.DESCRIPTION, YEAR=self.YEAR, MODEL=self.MODEL,
+                          MILEAGE=self.MILEAGE, COLOR=self.COLOR, MODEL_NUMBER=self.MODEL_NUMBER,
+                          DRIVETRAIN_NAME=self.DRIVETRAIN_NAME, DEALER_NUMBER=self.DEALER_NUMBER,
+                          STOCK_QTY=self.STOCK_QTY)
 
 
 class CarKey(db.Model):
@@ -110,3 +120,17 @@ def update(table, id, data):
         setattr(row, k, v)
     db.session.commit()
     return from_sql(row)
+
+colors = ['Red', 'Yellow', 'Blue', 'White', 'Black', 'Grey']
+inventory = pandas.read_excel('/Users/tyreestevenson/Desktop/CarNow/Model/Inventory_Data_Sample_for_Hackathon.xlsx')
+#print(inventory.head())
+inventory = inventory[inventory['DEALER_NUMBER'] == 1]
+counter = 1
+for i in inventory.to_dict(orient='records'):
+    i['CAR_ID'] = counter
+    i['MODEL'] = i.pop('TOMS_SERIES_NAME')
+    i.pop('#BUSINESS_MONTH')
+    i['MILEAGE'] = 0
+    i['COLOR'] = colors[random.randint(0, 6) - 1]
+    counter += 1
+    create(Car, i)
