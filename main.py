@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+import utils
+from flask import Flask, redirect,render_template, request
 from Model import database
 from __init__ import app
 
@@ -6,8 +7,10 @@ from __init__ import app
 @app.route("/", methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
-        print(database.search(database.Car, MODEL_YEAR=request.form['year'], MODEL=request.form['model'],
-                              PRICE=request.form['price'], COLOR=request.form['color']))
+        utils.messageSalesRep(request.form['name'], request.form['email'], request.form['message'])
+        # print(database.search(database.Car, MODEL_YEAR=request.form['year'], MODEL=request.form['model'],
+        #                       PRICE=request.form['price'], COLOR=request.form['color']))
+        # redirect("/")
     return render_template("index.html")
 
 @app.route("/map.html")
@@ -23,9 +26,7 @@ def searchCar():
 def presenetCar():
     """This page will load all the default care info and be basic layout for cars."""
 
-def messageSalesRep(customer_name, customer_message):
-    print(customer_name)
-    print(customer_message)
+
 
 if __name__ == '__main__':
     database.create_database(app)
