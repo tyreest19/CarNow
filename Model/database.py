@@ -105,8 +105,12 @@ def read(table, id):
 # [END read]
 
 def search(table, **kwargs):
+    new_dict = {}
+    for key in kwargs.keys():
+        if kwargs[key] != '':
+            new_dict[key] = kwargs[key]
     list_of_results = []
-    for result in table.query.filter_by(**kwargs).all():
+    for result in table.query.filter_by(**new_dict).all():
         list_of_results.append(result.returnAsDict())
     return list_of_results
 
