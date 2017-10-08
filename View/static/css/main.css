@@ -1993,3 +1993,8 @@
 		#footer .copyright a {
 			color: inherit;
 		}
+
+/* Parking lot css */
+body#map {
+	background-image: url("../images/Parking_Lot.png")!;
+}
