@@ -12,17 +12,13 @@ def home():
 
 @app.route("/map.html")
 def parkingLot():
+    # return "Map Page"
     return render_template("map.html")
 
 @app.route("/search")
 def searchCar():
     """Page will allow users to search for a car"""
     database.read()
-
-
-@app.route("/map")
-def map():
-    return render_template('map.html')
 
 def presenetCar():
     """This page will load all the default care info and be basic layout for cars."""
