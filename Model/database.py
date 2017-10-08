@@ -1,16 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-import pandas
-import random
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://sql3198257:fTL6wulZHf@sql3.freemysqlhosting.net/sql3198257'
+from __init__ import app
 db = SQLAlchemy(app)
-
-def init_app(app):
-    # Disable track modifications, as it unnecessarily uses memory.
-    app.config.setdefault('SQLALCHEMY_TRACK_MODIFICATIONS', False)
-    db.init_app(app)
-
 
 def from_sql(row):
     """Translates a SQLAlchemy model instance into a dictionary"""
@@ -30,9 +21,9 @@ class Car(db.Model):
     STOCK_QTY = db.Column(db.Integer)
     MILEAGE = db.Column(db.Integer)
     COLOR = db.Column(db.VARCHAR(20))
+    PRICE = db.Column(db.Integer)
 
     def __repr__(self):
-        #return str(self.CAR_ID)
         return "["\
                "CAR_ID: {CAR_ID},"\
                "MODEL_YEAR: {MODEL_YEAR},"\
@@ -46,12 +37,25 @@ class Car(db.Model):
                           MILEAGE=str(self.MILEAGE), COLOR=self.COLOR, MODEL_NUMBER=self.MODEL_NUMBER,
                           DEALER_NUMBER=self.DEALER_NUMBER, STOCK_QTY=self.STOCK_QTY)
 
+    def returnAsDict(self):
+        return {
+            "CAR_ID": self.CAR_ID,
+            "DESCRIPTION": self.DESCRIPTION,
+            "MODEL_YEAR": self.MODEL_YEAR,
+            "MODEL": self.MODEL,
+            "MILEAGE": self.MILEAGE,
+            "COLOR":self.COLOR,
+            "MODEL_NUMBER": self.MODEL_NUMBER,
+            "DEALER_NUMBER": self.DEALER_NUMBER,
+            "STOCK_QTY":self.STOCK_QTY
+        }
+
 
 class CarKey(db.Model):
     """This class represents the Key table"""
     __tablename__ = "CarKey"
     KeyID = db.Column(db.Integer, primary_key=True)
-    CarID = db.Column(db.Integer, db.ForeignKey('Car.CarID'), nullable=False)
+    CAR_ID = db.Column(db.Integer, db.ForeignKey('Car.CAR_ID'), nullable=False)
 
 
     def __repr__(self):
@@ -59,6 +63,12 @@ class CarKey(db.Model):
                "KeyID: '{KeyID}', " \
                "CarID: '{CarID}"\
                "}".format(KeyID=self.KeyID, CarID=self.CarID)
+
+    def returnAsDict(self):
+        return {
+            "KeyID": self.KeyID,
+            "CarID": self.CarID
+        }
 
 class SalesPerson(db.Model):
     """This class represents the SalesPerson table"""
@@ -73,6 +83,12 @@ class SalesPerson(db.Model):
                "FName: '{FName}', " \
                "LName: '{LName}"\
                "}".format(FName=self.FName, LName=self.LName)
+
+    def returnAsDict(self):
+        return {
+            "FName": self.FName,
+            "LName": self.LName
+        }
 
 def read(table, id):
     """Reads a row from desried table within the SaveMeTime database
@@ -89,7 +105,10 @@ def read(table, id):
 # [END read]
 
 def search(table, **kwargs):
-    return table.query.filter_by(**kwargs).all()
+    list_of_results = []
+    for result in table.query.filter_by(**kwargs).all():
+        list_of_results.append(result.returnAsDict())
+    return list_of_results
 
 # [START create]
 def create(table, data):
@@ -122,3 +141,12 @@ def update(table, id, data):
         setattr(row, k, v)
     db.session.commit()
     return from_sql(row)
+
+def create_database(app):
+    """
+    If this script is run directly, create all the tables necessary to run the
+    application.
+    """
+    db.init_app(app)
+    with app.app_context():
+        db.create_all()
