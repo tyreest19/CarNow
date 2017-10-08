@@ -2,6 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import pandas
 import random
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://sql3198257:fTL6wulZHf@sql3.freemysqlhosting.net/sql3198257'
 db = SQLAlchemy(app)
@@ -120,5 +121,3 @@ def update(table, id, data):
         setattr(row, k, v)
     db.session.commit()
     return from_sql(row)
-
-
