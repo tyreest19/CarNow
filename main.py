@@ -7,9 +7,10 @@ from __init__ import app
 @app.route("/", methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
-        utils.messageSalesRep(request.form['name'], request.form['email'], request.form['message'])
-        # print(database.search(database.Car, MODEL_YEAR=request.form['year'], MODEL=request.form['model'],
-        #                       PRICE=request.form['price'], COLOR=request.form['color']))
+        #utils.messageSalesRep(request.form['name'], request.form['email'], request.form['message'])
+        search_results = database.search(database.Car, MODEL_YEAR=request.form['year'], MODEL=request.form['model'],
+                               PRICE=request.form['price'], COLOR=request.form['color'])
+        return render_template('search.html', cars=search_results)
         # redirect("/")
     return render_template("index.html")
 
