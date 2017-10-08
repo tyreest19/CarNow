@@ -122,8 +122,4 @@ def update(table, id, data):
     for k, v in data.items():
         setattr(row, k, v)
     db.session.commit()
-<<<<<<< HEAD
     return from_sql(row)
-=======
-    return from_sql(row)
->>>>>>> d2e0ce7ec5269e8a07ba3c6aab4e1cca93bf2a61
