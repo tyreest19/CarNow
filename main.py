@@ -1,12 +1,13 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from Model import database
-app = Flask(__name__, template_folder='View/templates/', static_folder='View')
-app.config['DEBUG'] = False
+from __init__ import app
 
 
-@app.route("/")
+@app.route("/", methods=['GET', 'POST'])
 def home():
-    # return "Welcome to CarNow"
+    if request.method == 'POST':
+        print(database.search(database.Car, MODEL_YEAR=request.form['year'], MODEL=request.form['model'],
+                              PRICE=request.form['price'], COLOR=request.form['color']))
     return render_template("index.html")
 
 @app.route("/map.html")
@@ -22,8 +23,11 @@ def searchCar():
 def presenetCar():
     """This page will load all the default care info and be basic layout for cars."""
 
+def messageSalesRep(customer_name, customer_message):
+    print(customer_name)
+    print(customer_message)
+
 if __name__ == '__main__':
-    # print(url_for('static', filename='static/css/map.css'))
-    # with app.test_request_context():
-    #     print(url_for('static', filename='static/css/map.css'))
+    database.create_database(app)
     app.run()
+
