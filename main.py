@@ -17,14 +17,15 @@ def parkingLot():
     # return "Map Page"
     return render_template("map.html")
 
-@app.route("/search")
-def searchCar():
-    """Page will allow users to search for a car"""
-    database.read()
+# @app.route("/search")
+# def searchCar():
+#     """Page will allow users to search for a car"""
+#     database.read()
 
 @app.route("/sales_rep", methods=['GET', 'POST'])
 def sales_rep():
     """Page will allow users to search for a car"""
+    database.randomize_prices()
     return 'Thank you and your request is being processed'
 
 def presenetCar():
