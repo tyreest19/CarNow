@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from __init__ import app
+import random
 db = SQLAlchemy(app)
 
 def from_sql(row):
