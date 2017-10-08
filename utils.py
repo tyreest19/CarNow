@@ -1,4 +1,3 @@
-from flask import Flask, render_template, request
 from Model import database
 from twilio.rest import Client
 
@@ -28,3 +27,14 @@ def messageSalesRep(customer_name, customer_email, customer_message):
 
 
     print(message.sid)
+
+def searchForCar(**kwargs):
+    if kwargs['MODEL_YEAR'] == None:
+        kwargs.pop('MODEL_YEAR')
+    if kwargs['MODEL'] == None:
+        kwargs.pop('MODEL')
+    if kwargs['PRICE'] == None:
+        kwargs.pop('PRICE')
+    if kwargs['COLOR'] == 'COLOR':
+        kwargs.pop('COLOR')
+    return database.search(database.Car, kwargs)

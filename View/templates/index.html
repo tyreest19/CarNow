@@ -147,7 +147,7 @@
 							<div>
 								<section>
 									<h2>Get in touch</h2>
-									<form method="post" action="#">
+									<form method="post" action="/sales_rep">
 										<div class="field half first">
 											<input type="text" name="name" id="name" placeholder="Name" />
 										</div>
@@ -171,7 +171,7 @@
 							<div>
 								<section>
 									<h2>Vehicle Search</h2>
-									<form method="post" action="#">
+									<form method="post">
 										<div class="field half first">
 											Model: <input type="text" name="model" id="model" placeholder="Prius" />
 										</div>
@@ -193,7 +193,7 @@
 							<div>
 								<section>
 									<h2>Request a Sales Representative</h2>
-									<form method="post" action="#">
+									<form method="post" action="/sales_rep">
 										<div class="field half first">
 											<div class="field half first">
 												Name: <input type="text" name="name" id="name" placeholder="Dylan" />
@@ -202,8 +202,9 @@
 											<textarea name="message" id="message" rows="4" placeholder="How can we assist you..."></textarea>
 										</div>
 										<ul class="actions">
-											<li><input type="submit" value="Request" class="special" /></li>
+											<li><input type="submit" value="Request" name="AboutBtn" class="special" /></li>
 										</ul>
+										</div>
 									</form>
 								</section>
 							</div>
