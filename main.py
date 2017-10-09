@@ -6,27 +6,31 @@ from __init__ import app
 from twilio.rest import Client
 
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/", methods=['GET'])
 def home():
-    if request.method == 'POST':
-        if None not in (request.form['name'], request.form['email'], request.form['message']):
-            utils.messageSalesRep(request.form['name'], request.form['email'], request.form['message'])
-        search_results = database.search(database.Car, MODEL_YEAR=request.form['year'], MODEL=request.form['model'],
-                                             PRICE=request.form['price'], COLOR=request.form['color'])
-        return render_template('search.html', cars=search_results)
     return render_template("index.html")
 
-@app.route("/map.html")
+@app.route("/", methods=['POST'])
+def process():
+    search_results = database.search(database.Car, MODEL_YEAR=request.form['year'], MODEL=request.form['model'],
+                                                 PRICE=request.form['price'], COLOR=request.form['color'])
+    return render_template('search.html', cars=search_results)
+
+
+@app.route("/map")
 def parkingLot():
     # return "Map Page"
 
     return render_template("map.html", spot=random.randint(1, 12))
 
 
-@app.route("/sales_rep", methods=['GET', 'POST'])
+@app.route("/sales_rep", methods=['POST'])
 def sales_rep():
     """Page will allow users to search for a car"""
-    return redirect('/')
+    if request.method == 'POST':
+    #     #utils.messageSalesRep(request.form['name'], request.form['email'], request.method['message'])
+        return render_template('index.html')
+    return render_template('index.html')
 
 def presenetCar():
     """This page will load all the default care info and be basic layout for cars."""
@@ -64,5 +68,5 @@ def presenetCar():
 
 if __name__ == '__main__':
     database.create_database(app)
-    app.run()
+    app.run(host='0.0.0.0', port='5008')
 
