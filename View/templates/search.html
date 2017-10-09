@@ -3,7 +3,10 @@
 <body>
 
 {% for car in cars %}
-<p>{{car}}</p>
+<center><p>{{car.MODEL}}</p>
+<p>{{car.MODEL_YEAR}}</p>
+<!-- <a href="View/static/images/86_copy.jpg" class="image"><img src="View/static/images/86-front.jpg" alt="" /> </a></center> -->
+<a href="View/static/images/{{ car.IMAGE_NAME }}" class="image"><img src="View/static/images/{{ car.IMAGE_NAME }}" alt="" />
 {% endfor %}
 </body>
 </html>
