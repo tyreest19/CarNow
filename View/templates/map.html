@@ -5,18 +5,38 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="View/templates/assets/js/ie/html5shiv.js"></script><![endif]-->
-		<!-- <link type="text/css" rel="stylesheet" href="View/static/css/map.css" /> -->
+		<!-- <link type="text/css" rel="stylesheet" href="View/static/css/main.css" /> -->
         <!-- <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='static/css/map.css') }}" /> -->
 		<!--[if lte IE 9]><link rel="stylesheet" href="View/templates/assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="View/templates/assets/css/ie8.css" /><![endif]-->
         <style>
             #map {
-                background: url("View/static/images/spots/spot_0.jpg") no-repeat center center fixed;
+                background: url("View/static/images/spots/spot_{{spot}}.jpg") no-repeat center center fixed;
                 background-size: cover;
+                {% if spot == 0 %}
                 background-position: 0px -190px;
+                {% else %}
+                background-position: 0px -290px;
+                {% endif %}
             }
         </style>
 	</head>
 	<body id="map">
+        <style>
+        .btn-primary {
+            background-color: #000;
+            color: #FFF;
+            border-color: #3276b1;
+            border-radius: 25px;
+        }
+        .btn-primary:hover,
+        .btn-primary:focus,
+        .btn-primary:active    {
+            background-color: #000;
+            color: #FFF;
+            border-color: #285e8e;
+        }
+        </style>
+        <a href="/"><button type="button" class="btn btn-primary">Back To Search</button></a>
     </body>
 </html>
