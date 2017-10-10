@@ -1,7 +1,5 @@
-from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from __init__ import app
-import random
 db = SQLAlchemy(app)
 
 def from_sql(row):
@@ -23,6 +21,8 @@ class Car(db.Model):
     MILEAGE = db.Column(db.Integer)
     COLOR = db.Column(db.VARCHAR(20))
     PRICE = db.Column(db.Integer)
+    IMAGE_NAME = db.Column(db.VARCHAR(45))
+    LOCATION = db.Column(db.Integer)
 
     def __repr__(self):
         return "["\
@@ -33,10 +33,13 @@ class Car(db.Model):
                "MODEL: {MODEL},"\
                "MODEL_NUMBER: {MODEL_NUMBER},"\
                "DESCRIPTION: {DESCRIPTION},"\
-               "STOCK_QTY: {STOCK_QTY}"\
+               "STOCK_QTY: {STOCK_QTY},"\
+               "PRICE: {PRICE},"\
+               "IMAGE_NAME: {IMAGE_NAME},"\
+               "LOCATION: {LOCATION}"\
                "]".format(CAR_ID=self.CAR_ID, DESCRIPTION=self.DESCRIPTION, MODEL_YEAR=self.MODEL_YEAR, MODEL=self.MODEL,
                           MILEAGE=str(self.MILEAGE), COLOR=self.COLOR, MODEL_NUMBER=self.MODEL_NUMBER,
-                          DEALER_NUMBER=self.DEALER_NUMBER, STOCK_QTY=self.STOCK_QTY)
+                          DEALER_NUMBER=self.DEALER_NUMBER, STOCK_QTY=self.STOCK_QTY,PRICE=self.PRICE,IMAGE_NAME=self.IMAGE_NAME,LOCATION=self.LOCATION)
 
     def returnAsDict(self):
         return {
@@ -48,7 +51,10 @@ class Car(db.Model):
             "COLOR":self.COLOR,
             "MODEL_NUMBER": self.MODEL_NUMBER,
             "DEALER_NUMBER": self.DEALER_NUMBER,
-            "STOCK_QTY":self.STOCK_QTY
+            "STOCK_QTY":self.STOCK_QTY,
+            "PRICE":self.PRICE,
+            "IMAGE_NAME":self.IMAGE_NAME,
+            "LOCATION":self.LOCATION
         }
 
 
